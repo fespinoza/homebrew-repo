@@ -6,10 +6,10 @@ class SpmVersionStatus < Formula
   license "MIT"
 
   def install
-     system "make", "install", "prefix=#{prefix}"
-   end
+    system "make", "install", "prefix=#{prefix}"
+  end
 
-   test do
-     system bin/"spm-version-status"
-   end
+  test do
+    system bin/"spm-version-status"
+  end
 end
